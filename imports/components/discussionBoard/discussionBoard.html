@@ -1,0 +1,17 @@
+<header>
+    <h1>Forum</h1>
+    <login-buttons style="float: right;"></login-buttons>
+    <h3 ng-show="$ctrl.currentUser">Today's Discussion topic is, issue related to 'On Going Production Outage'....!</h3>
+    <form class="new-comment" ng-submit="$ctrl.addComment($ctrl.newComment)" ng-show="$ctrl.currentUser">
+
+        <input ng-model="$ctrl.newComment" type="text" name="text" placeholder="Type to add new Comment"/>
+
+    </form>
+</header>
+<ul ng-show="$ctrl.currentUser">
+    <li ng-repeat="comment in $ctrl.comments">
+        <span class="comment"><strong>{{comment.username}} :- </strong></span>
+        <span class="comment">{{comment.comm}}</span>
+    </li>
+</ul>
+
