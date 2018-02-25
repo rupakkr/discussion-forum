@@ -1,2 +1,2 @@
 # discussion-forum
-Discusion Forum Sample App (Using Meteor Framwork )
+Discusion Forum Sample App (Using Meteor Framework )
